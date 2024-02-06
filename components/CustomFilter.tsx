@@ -13,6 +13,7 @@ interface OptionProps {
 interface CustomFilterProps {
   title: string;
   options: OptionProps[];
+  setFilter: (value: any) => void;
 }
 
 const CustomFilter = ({ title, options, setFilter }: CustomFilterProps) => {

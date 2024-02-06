@@ -7,6 +7,7 @@ import { updateSearchParams } from "@/utils";
 interface ShowMoreProps {
   pageNumber: number;
   isNext: boolean;
+  setLimit: (limit: number) => void;
 }
 const ShowMore = ({ pageNumber, isNext, setLimit }: ShowMoreProps) => {
   const router = useRouter();
